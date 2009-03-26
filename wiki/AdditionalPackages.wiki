@@ -19,6 +19,6 @@
 ./spd -i twisted-8.1.0.p2
 ./spd -i openssl-0.9.8d.p1
 ./spd -i pyopenssl-0.6
-./spd -i http://qsnake.googlecode.com/files/foolscap-0.3.2.p0.spkg
-./spd -i http://qsnake.googlecode.com/files/ipython-bzr1160.spkg
+./spd -i http://spdproject.googlecode.com/files/foolscap-0.3.2.p0.spkg
+./spd -i http://spdproject.googlecode.com/files/ipython-bzr1160.spkg
 }}}
