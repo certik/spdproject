@@ -42,3 +42,8 @@ $ ./spd
 ----------------------------------------------------------------------
 In [1]: 
 }}}
+
+
+== Next steps ==
+
+Now you have a working python installation. To install additional packages, follow the AdditionalPackages howto.
