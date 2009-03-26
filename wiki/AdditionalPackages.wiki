@@ -1,0 +1,24 @@
+#summary Howto install other packages
+
+== Install numpy, scipy matplotlib and sympy ==
+
+{{{
+./spd -i fortran-20071120.p5
+./spd -i lapack-20071123.p0
+./spd -i blas-20070724
+./spd -i atlas-3.8.3.p0
+./spd -i numpy-1.2.0.p0
+./spd -i scipy-20071020-0.6.p4
+./spd -i matplotlib-0.98.5.3rc0-svn6910.p3
+./spd -i sympy-0.6.3.p0
+}}}
+
+== Install IPython parallel ==
+
+{{{
+./spd -i twisted-8.1.0.p2
+./spd -i openssl-0.9.8d.p1
+./spd -i pyopenssl-0.6
+./spd -i http://qsnake.googlecode.com/files/foolscap-0.3.2.p0.spkg
+./spd -i http://qsnake.googlecode.com/files/ipython-bzr1160.spkg
+}}}
