@@ -47,3 +47,5 @@ In [1]:
 == Next steps ==
 
 Now you have a working python installation. To install additional packages, follow the AdditionalPackages howto.
+
+If you want to help with development, follow the [http://code.google.com/p/spdproject/wiki/CreateSPD CreateSPD] howto.
