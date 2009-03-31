@@ -27,4 +27,6 @@
 
 {{{
 ./spd -i cython-0.10.3
+./spd -i mercurial-1.1.2
+
 }}}
