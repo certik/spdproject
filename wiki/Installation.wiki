@@ -33,7 +33,7 @@ The very least you want to install is:
 ./spd -i ipython-0.9.1
 }}}
 
-*Important*: delete your Sage dot directory, otherwise SPD will not install it's modified ipython rc files and it will not work (you need to do this only once):
+*Important*: delete now your Sage dot directory, otherwise SPD will not install it's modified ipython rc files and it will not work (you need to do this only once):
 {{{
 rm -rf ~/.sage/
 }}}
