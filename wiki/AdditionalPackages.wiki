@@ -29,4 +29,4 @@
 ./spd -i cython-0.10.3
 ./spd -i mercurial-1.1.2
 }}}
-And more --- the notebook has not yet been extracted from Sage, any help is welcome.
+And more --- the notebook has not yet been extracted from Sage, any help is welcome. See [http://groups.google.com/group/spd-dev/browse_thread/thread/8641df7f1dab0394 here] for more info.
