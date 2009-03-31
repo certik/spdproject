@@ -22,3 +22,9 @@
 ./spd -i http://spdproject.googlecode.com/files/foolscap-0.3.2.p0.spkg
 ./spd -i http://spdproject.googlecode.com/files/ipython-bzr1160.spkg
 }}}
+
+== Notebook ==
+
+{{{
+./spd -i cython-0.10.3
+}}}
