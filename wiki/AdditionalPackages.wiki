@@ -30,12 +30,5 @@
 ./spd -i twisted-8.1.0.p2
 ./spd -i setuptools-0.6c9
 ./spd -i jinja-1.2
-./spd -i ~/ext/notebook/sagelite-3.4.1.spkg
+./spd -i http://spdproject.googlecode.com/files/sagelite-3.4.1.spkg
 }}}
-
-old:
-{{{
-./spd -i cython-0.10.3
-./spd -i mercurial-1.1.2
-}}}
-And more --- the notebook has not yet been extracted from Sage, any help is welcome. See [http://groups.google.com/group/spd-dev/browse_thread/thread/8641df7f1dab0394 here] for more info.
