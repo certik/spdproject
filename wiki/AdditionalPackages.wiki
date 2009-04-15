@@ -26,6 +26,12 @@
 == Notebook ==
 
 {{{
+./spd -i pexpect-2.0.p3
+./spd -i twisted-8.1.0.p2
+}}}
+
+old:
+{{{
 ./spd -i cython-0.10.3
 ./spd -i mercurial-1.1.2
 }}}
