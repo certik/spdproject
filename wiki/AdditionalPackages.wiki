@@ -1,5 +1,7 @@
 #summary Howto install other packages
 
+You can choose any of the sections below (they are independent), or you can combine them.
+
 == Install numpy, scipy matplotlib and sympy ==
 
 {{{
