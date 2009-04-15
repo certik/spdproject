@@ -34,3 +34,9 @@ You can choose any of the sections below (they are independent), or you can comb
 ./spd -i jinja-1.2
 ./spd -i http://spdproject.googlecode.com/files/sagelite-3.4.1.spkg
 }}}
+
+Run the notebook with:
+{{{
+In [1]: from sage.server.notebook.notebook_object import notebook
+In [2]: notebook()
+}}}
