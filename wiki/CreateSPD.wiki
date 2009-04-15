@@ -15,3 +15,12 @@ wget http://spdproject.googlecode.com/files/spd-0.3.tar.gz
 }}}
 
 Now follow the [http://code.google.com/p/spdproject/wiki/Installation Installation] howto.
+
+== How to keep things in a git repository ==
+
+{{{
+git clone git://github.com/certik/spd.git
+cp -a spd spd-3.4.1.beta4
+rm -rf spd-3.4.1.beta4/.git
+tar zcf spd-3.4.1.beta4.tar.gz spd-3.4.1.beta4
+}}}
