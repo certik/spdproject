@@ -28,6 +28,7 @@
 {{{
 ./spd -i pexpect-2.0.p3
 ./spd -i twisted-8.1.0.p2
+./spd -i ~/ext/notebook/sagelite-3.4.1.spkg
 }}}
 
 old:
