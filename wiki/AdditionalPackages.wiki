@@ -2,7 +2,8 @@
 
 You can choose any of the sections below (they are independent), or you can combine them.
 
-<wiki:toc max_depth="1" />
+Contents:
+<wiki:toc max_depth="2" />
 
 == Install numpy, scipy matplotlib and sympy ==
 
