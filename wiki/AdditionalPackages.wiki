@@ -32,8 +32,14 @@ You can choose any of the sections below (they are independent), or you can comb
 ./spd -i twisted-8.1.0.p2
 ./spd -i setuptools-0.6c9
 ./spd -i jinja-1.2
-./spd -i http://spdproject.googlecode.com/files/sagelite-3.4.1.spkg
+./spd -i libgpg_error-1.6.p0
+./spd -i libgcrypt-1.4.3.p0
+./spd -i gnutls-2.2.1.p1
+./spd -i python_gnutls-1.1.4.p3
+./spd -i http://spdproject.googlecode.com/files/spd_notebook-3.4.1-2.spkg
 }}}
+
+*important*: put a link to the "spd" in your path *and* name it "sage". That is because the notebook does things like `os.system("sage")`, so it has to execute our spd instead.
 
 Run the notebook with:
 {{{
