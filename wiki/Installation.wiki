@@ -32,6 +32,8 @@ The very least you want to install is:
 ./spd -i ipython-0.9.1
 }}}
 
+*Note*: See the current list of the [http://www.sagemath.org/packages/standard SAGE packages] in case a download fails. It is usually sufficient to increase the release number (the last digit).
+
 Then:
 {{{
 $ ./spd 
