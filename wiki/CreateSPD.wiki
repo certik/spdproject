@@ -24,3 +24,9 @@ cp -a spd spd-3.4.1.beta4
 rm -rf spd-3.4.1.beta4/.git
 tar zcf spd-3.4.1.beta4.tar.gz spd-3.4.1.beta4
 }}}
+
+The relevant repositories are:
+
+http://github.com/certik/spd
+
+http://github.com/certik/spd_notebook
