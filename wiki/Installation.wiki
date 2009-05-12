@@ -1,5 +1,8 @@
 #summary How to install SPD
 
+
+This wiki contains older instructions how to install things manually and this is intended for experienced SPD users. If you are new to SPD, please follow the instructions on the front page: http://code.google.com/p/spdproject/
+
 = Download =
 
 {{{
