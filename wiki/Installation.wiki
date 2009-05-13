@@ -14,6 +14,8 @@ $ make
 
 This prepares the SPD. Now you can install things with `./spd -i package.spkg`.
 
+The `master` branch contains a stripped Sage (but no modifications) and the `spd` branch contains all SPD modifications. When new Sage releases, we just update the `master` branch and then merge all our local changes in the `spd` branch.
+
 == Install the minimum packages ==
 
 If you have more than one processor (e.g. 8), use
