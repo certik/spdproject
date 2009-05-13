@@ -2,6 +2,8 @@
 
 You can choose any of the sections below (they are independent), or you can combine them.
 
+Note: it's easier to just download the latest release of SPD and you get all the packages below by just typing `make`.
+
 Contents:
 <wiki:toc max_depth="2" />
 
