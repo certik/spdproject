@@ -3,21 +3,16 @@
 
 This wiki contains older instructions how to install things manually and this is intended for experienced SPD users. If you are new to SPD, please follow the instructions on the front page: http://code.google.com/p/spdproject/
 
-= Download =
+= Download the git repository =
 
 {{{
-wget http://spdproject.googlecode.com/files/spd-3.4.1.beta4.tar.gz
+$ git clone git://github.com/certik/spd.git
+$ cd spd
+$ git checkout -b spd origin/spd
+$ make
 }}}
 
-== Installation ==
-
-{{{
-tar xzf spd-3.4.1.beta4.tar.gz
-cd spd-3.4.1.beta4
-SAGE_FORTRAN=/usr/bin/gfortran make
-}}}
-
-This is the bare package, that doesn't have any functionality.
+This prepares the SPD. Now you can install things with `./spd -i package.spkg`.
 
 == Install the minimum packages ==
 
