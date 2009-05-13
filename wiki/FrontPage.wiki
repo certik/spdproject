@@ -9,7 +9,7 @@ It is based on Sage, but the standard download has only 2MB and then you only in
 {{{
 $ wget http://spdproject.googlecode.com/files/spd-3.4.2spd1.tar
 $ tar xf spd-3.4.2spd1.tar
-$ cd spd-3.4.2spd1.tar
+$ cd spd-3.4.2spd1
 $ make
 }}}
 wait about 10 minutes (tested on Debian, Ubuntu, Gentoo, Mac OS X). Then:
