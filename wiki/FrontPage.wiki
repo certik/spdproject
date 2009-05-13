@@ -1,0 +1,36 @@
+#summary Front page. This line is not visible.
+
+Source Python Distribution (SPD) is a Python distribution and many optional (mainly scientific) packages. Everything fully builds from source on any platform (any linux, Mac OS X, clusters and soon windows).
+
+It is based on Sage, but the standard download has only 2MB and then you only install packages that you really need.
+
+== Installation ==
+
+{{{
+$ wget http://spdproject.googlecode.com/files/spd-3.4.2spd1.tar
+$ tar xf spd-3.4.2spd1.tar
+$ cd spd-3.4.2spd1.tar
+$ make
+}}}
+wait about 10 minutes. Then:
+{{{
+$ ./spd
+---------------------------------------------------------------------------
+| Source Python Distribution, Version 3.4.2spd1, Release Date: 2009-05-12 |
+| Type notebook() for the GUI, and license() for information.             |
+---------------------------------------------------------------------------
+In [1]: from sage.server.notebook.notebook_object import notebook
+In [2]: notebook()
+}}}
+
+and this will start a notebook in the browser with the standard set of packages preinstalled (numpy, scipy, matplotlib, sympy).
+
+You can also install individual packages by hand, more info at: [http://code.google.com/p/spdproject/wiki/Installation Installation]
+
+== Mailinglist ==
+
+Please discuss all related issues on the mailinglist:
+
+http://groups.google.com/group/spd-dev
+
+and report all bugs to our [http://code.google.com/p/spdproject/issues/list bug tracker].
