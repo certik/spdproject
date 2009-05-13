@@ -12,7 +12,7 @@ $ tar xf spd-3.4.2spd1.tar
 $ cd spd-3.4.2spd1
 $ make
 }}}
-wait about 10 minutes (tested on Debian, Ubuntu, Gentoo, Mac OS X). Then:
+wait about 10 minutes (tested on Debian, Ubuntu, Gentoo, Fedora, Mac OS X). Then:
 {{{
 $ ./spd
 ---------------------------------------------------------------------------
