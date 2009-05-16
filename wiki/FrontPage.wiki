@@ -10,6 +10,14 @@ It is based on Sage, but the standard download has only 2MB and then you only in
   * *12 May 2009* Version 3.4.2spd1 released ([http://groups.google.com/group/spd-dev/browse_thread/thread/c08576baae216d6f release notes])
   * *15 Apr 2009* Version 3.4.1.beta4 released ([http://groups.google.com/group/spd-dev/browse_thread/thread/38f4c575d7ff4def release notes])
 
+== Mailinglist ==
+
+Please discuss all related issues on the mailinglist:
+
+http://groups.google.com/group/spd-dev
+
+and report all bugs to our [http://code.google.com/p/spdproject/issues/list bug tracker].
+
 == Installation ==
 
 {{{
@@ -50,11 +58,3 @@ this should produced the following plot in the notebook:
 http://spdproject.googlecode.com/files/a.png
 
 You can also install individual packages by hand, more info at: [http://code.google.com/p/spdproject/wiki/Installation Installation]
-
-== Mailinglist ==
-
-Please discuss all related issues on the mailinglist:
-
-http://groups.google.com/group/spd-dev
-
-and report all bugs to our [http://code.google.com/p/spdproject/issues/list bug tracker].
