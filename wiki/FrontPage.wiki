@@ -53,7 +53,7 @@ plot(R[100:],-A[4]/R[100:], color=[1,0,0], lw=2, ls='-.')
 grid(True)
 savefig("a.png")
 }}}
-this should produced the following plot in the notebook:
+this should produce the following plot in the notebook:
 
 http://spdproject.googlecode.com/files/a.png
 
