@@ -47,6 +47,8 @@ savefig("a.png")
 }}}
 this should produced the following plot in the notebook:
 
+http://spdproject.googlecode.com/files/a.png
+
 You can also install individual packages by hand, more info at: [http://code.google.com/p/spdproject/wiki/Installation Installation]
 
 == Mailinglist ==
