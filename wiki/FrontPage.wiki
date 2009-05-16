@@ -8,8 +8,7 @@ It is based on Sage, but the standard download has only 2MB and then you only in
 
   * *15 May 2009* Version 3.4.2spd2 released ([http://groups.google.com/group/spd-dev/browse_thread/thread/f6e9b20ddf4c262e release notes])
   * *12 May 2009* Version 3.4.2spd1 released ([http://groups.google.com/group/spd-dev/browse_thread/thread/c08576baae216d6f release notes])
-
-
+  * *15 Apr 2009* Version 3.4.1.beta4 released ([http://groups.google.com/group/spd-dev/browse_thread/thread/38f4c575d7ff4def release notes])
 
 == Installation ==
 
