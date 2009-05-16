@@ -3,27 +3,17 @@
 == How to create the SPD ==
 
 {{{
-wget http://sage.math.washington.edu/sage/src/sage-3.4.tar
-wget http://spdproject.googlecode.com/files/sage_scripts-3.4.spkg
-wget http://spdproject.googlecode.com/files/build_spd
-sh build_spd
-}}}
-
-This will build spd-0.3.tar.gz. Alternatively, you can download it directly (2MB):
-{{{
-wget http://spdproject.googlecode.com/files/spd-0.3.tar.gz
+$ git clone git://github.com/certik/spd.git
+$ cd spd
+$ git co -b spd origin/spd
+$ cd spkg/standard/
+$ ./download_packages
+$ cd ../../..
+$ cp -a spd spd-3.4.2spd3
+$ tar cf spd-3.4.2spd3.tar spd-3.4.2spd3
 }}}
 
 Now follow the [http://code.google.com/p/spdproject/wiki/Installation Installation] howto.
-
-== How to keep things in a git repository ==
-
-{{{
-git clone git://github.com/certik/spd.git
-cp -a spd spd-3.4.1.beta4
-rm -rf spd-3.4.1.beta4/.git
-tar zcf spd-3.4.1.beta4.tar.gz spd-3.4.1.beta4
-}}}
 
 The relevant repositories are:
 
