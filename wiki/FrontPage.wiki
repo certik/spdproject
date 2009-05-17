@@ -2,7 +2,7 @@
 
 Source Python Distribution (SPD) is a Python distribution and many optional (mainly scientific) packages. Everything fully builds from source on any platform (any linux, Mac OS X, clusters and soon windows).
 
-It is based on Sage, but the standard download has only 2MB and then you only install packages that you really need.
+It is based on Sage, but the standard download has only 60MB (and builds in less than 10 minutes) and then you only install packages that you really need (or you can just download the 2MB bare SPD package and install things yourself).
 
 ==News==
 
