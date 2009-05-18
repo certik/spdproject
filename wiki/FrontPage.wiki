@@ -7,7 +7,7 @@ It is based on Sage, but the standard download has only 60MB (and builds in less
 The aim of SPD is to make it easy for anyone to create all in one
 distributions with just the packages that we need (e.g. packages that are
 currently in SPD, like scipy, numpy, notebook and then bunch of custom
-libraries, that don't even have a spkg yet).
+libraries, that don't even have a spkg yet). See this [http://groups.google.com/group/sage-devel/browse_thread/thread/d761c483aa4f9a99 thread] on sage-devel for more information regarding the relation of SPD and Sage.
 
 ==News==
 
