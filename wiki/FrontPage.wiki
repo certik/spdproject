@@ -26,20 +26,19 @@ and report all bugs to our [http://code.google.com/p/spdproject/issues/list bug 
 == Installation ==
 
 {{{
-$ wget http://spdproject.googlecode.com/files/spd-3.4.2spd2.tar
-$ tar xf spd-3.4.2spd2.tar
-$ cd spd-3.4.2spd2
+$ wget http://spdproject.googlecode.com/files/spd-3.4.2spd3.tar
+$ tar xf spd-3.4.2spd3.tar
+$ cd spd-3.4.2spd3
 $ make
 }}}
-wait about 10 minutes (tested on Debian, Ubuntu, Gentoo, Fedora, Mac OS X). Then:
+wait about 13 minutes (tested on Debian, Ubuntu, Gentoo, Fedora, Mac OS X). Then:
 {{{
 $ ./spd
 ---------------------------------------------------------------------------
-| Source Python Distribution, Version 3.4.2spd2, Release Date: 2009-05-15 |
+| Source Python Distribution, Version 3.4.2spd3, Release Date: 2009-05-20 |
 | Type notebook() for the GUI, and license() for information.             |
 ---------------------------------------------------------------------------
-In [1]: from sage.server.notebook.notebook_object import notebook
-In [2]: notebook()
+In [1]: notebook()
 }}}
 
 and this will start a notebook in the browser with the standard set of packages preinstalled (numpy, scipy, matplotlib, sympy). To test it, create a new worksheet and type in:
