@@ -26,7 +26,7 @@ $ git co -b spd origin/spd
 $ cd spkg/standard/
 $ ./download_packages
 $ vim sage_scripts/sage-banner  # edit the version & date in the banner
-$ git ci -a "SPD version bumped to 3.4.2spd3"
+$ git ci -a -m "SPD version bumped to 3.4.2spd3"
 $ git tag 3.4.2spd3
 $ git push --tags git@github.com:certik/spd.git
 $ cd ../../..
