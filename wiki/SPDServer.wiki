@@ -21,7 +21,7 @@ Create `notebook.py`:
 {{{
 from sage.server.notebook.notebook_object import notebook
 
-notebook(directory='/home/ondra/ext/nbfiles', port=8000, accounts=True,
+notebook(directory='/home/ondrej/ext/nbfiles', port=8000, accounts=True,
         address='', ulimit='-u 100 -v 3000000 -t 3600', open_viewer=False,
         timeout=120, secure=False, server_pool=['nbuser@localhost'])
 }}}
