@@ -1,5 +1,7 @@
 #summary How to install SPD on the server
 
+= Install SPD notebook =
+
 Do all of the below as the user `ondrej`, that will run the notebook server. Create an nbuser user that will run the actual worksheets:
 {{{
 $ sudo adduser nbuser
@@ -29,3 +31,28 @@ And start it using:
 {{{
 $ spd -python notebook.py
 }}}
+
+= Setting up lighttpd =
+
+{{{
+$ wajig install lighttpd
+}}}
+Create /etc/lighttpd/conf-available/20-notebook.conf:
+{{{
+server.modules   += ( "mod_proxy" )
+
+$SERVER["socket"] == ":80" {
+    proxy.server = ( "" =>
+        ( (
+        "host" => "127.0.0.1",
+        "port" => 8000
+        ) )
+    )
+}
+}}}
+Enable it:
+{{{
+$ sudo lighty-enable-mod notebook
+$ sudo /etc/init.d/lighttpd force-reload
+}}}
+And login to your computer from the outside world to the port 80. 
