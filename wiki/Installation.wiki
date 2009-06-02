@@ -52,4 +52,4 @@ Now you have a working python installation. To install additional packages, foll
 
 If you want to help with development, follow the [http://code.google.com/p/spdproject/wiki/CreateSPD CreateSPD] howto.
 
-To install the notebook on the server, follo the [http://wiki.sagemath.org/SageVirtualBox SageVirtualBox] howto.
+To install the notebook on the server, follow the [http://code.google.com/p/spdproject/wiki/SPDServer SPDServer] howto, or a similar [http://wiki.sagemath.org/SageVirtualBox SageVirtualBox] howto for Sage.
