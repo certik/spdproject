@@ -56,3 +56,7 @@ $ sudo lighty-enable-mod notebook
 $ sudo /etc/init.d/lighttpd force-reload
 }}}
 And login to your computer from the outside world to the port 80. 
+
+= Setting up VirtualBox = 
+
+http://wiki.sagemath.org/SageVirtualBox
