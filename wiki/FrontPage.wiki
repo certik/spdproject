@@ -11,6 +11,8 @@ libraries, that don't even have a spkg yet). See this [http://groups.google.com/
 
 ==News==
 
+I (Ondrej) am now working actively on FEMhub ([http://femhub.org/ femhub.org]), which is based on SPD, but provide lots of other packages that we need. I currently don't have time to maintain both SPD and FEMHub, so I just concentrate on FEMhub now. Anything I do for FEMhub can be easily ported to SPD or Sage though, so if you want to base your distribution on SPD, let me know, so that we can put the common denominator of what we need into SPD.
+
   * *20 May 2009* Version 3.4.2spd3 released ([http://groups.google.com/group/spd-dev/browse_thread/thread/87aff670b9b58f0d release notes])
   * *15 May 2009* Version 3.4.2spd2 released ([http://groups.google.com/group/spd-dev/browse_thread/thread/f6e9b20ddf4c262e release notes])
   * *12 May 2009* Version 3.4.2spd1 released ([http://groups.google.com/group/spd-dev/browse_thread/thread/c08576baae216d6f release notes])
