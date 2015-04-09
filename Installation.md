@@ -1,0 +1,51 @@
+This wiki contains older instructions how to install things manually and this is intended for experienced SPD users. If you are new to SPD, please follow the instructions on the front page: http://code.google.com/p/spdproject/
+
+# Download the git repository #
+
+```
+$ git clone git://github.com/certik/spd.git
+$ cd spd
+$ git checkout -b spd origin/spd
+$ make
+```
+
+This prepares the SPD. Now you can install things with `./spd -i package.spkg`.
+
+The `master` branch contains a stripped Sage (but no modifications) and the `spd` branch contains all SPD modifications. When new Sage releases, we just update the `master` branch and then merge all our local changes in the `spd` branch.
+
+## Install the minimum packages ##
+
+If you have more than one processor (e.g. 8), use
+```
+export MAKE="make -j9"
+```
+
+The very least you want to install is:
+```
+./spd -i termcap-1.3.1.p0
+./spd -i zlib-1.2.3.p4
+./spd -i readline-5.2.p6
+./spd -i python-2.5.2.p9
+./spd -i ipython-0.9.1
+```
+
+**Note**: See the current list of the [SAGE packages](http://www.sagemath.org/packages/standard) in case a download fails. It is usually sufficient to increase the release number (the last digit).
+
+Then:
+```
+$ ./spd 
+-----------------------------------------------------------------------------
+| Source Python Distribution, Version 3.4.1.beta4, Release Date: 2009-04-15 |
+| Type notebook() for the GUI, and license() for information.               |
+-----------------------------------------------------------------------------
+In [1]: 
+```
+
+
+## Next steps ##
+
+Now you have a working python installation. To install additional packages, follow the AdditionalPackages howto.
+
+If you want to help with development, follow the [CreateSPD](http://code.google.com/p/spdproject/wiki/CreateSPD) howto.
+
+To install the notebook on the server, follow the [SPDServer](http://code.google.com/p/spdproject/wiki/SPDServer) howto, or a similar [SageVirtualBox](http://wiki.sagemath.org/SageVirtualBox) howto for Sage.

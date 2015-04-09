@@ -1,0 +1,15 @@
+# Git repositories #
+
+```
+git clone git://github.com/certik/spd.git
+```
+and
+```
+git clone git://github.com/certik/spd_notebook.git  
+```
+
+# Online access #
+
+http://github.com/certik/spd
+
+http://github.com/certik/spd_notebook

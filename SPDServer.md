@@ -1,0 +1,60 @@
+# Install SPD notebook #
+
+Do all of the below as the user `ondrej`, that will run the notebook server. Create an nbuser user that will run the actual worksheets:
+```
+$ sudo adduser nbuser
+$ sudo addgroup sageusers
+$ sudo adduser ondrej sageusers
+$ sudo adduser nbuser sageusers
+```
+Setup ssh keys, so that you can do `ssh nbuser@localhost` without a password. Create a working directory:
+```
+$ mkdir nbfiles
+$ chmod g+w nbfiles
+```
+You have to make Sage available just by calling sage and it needs to be in default paths, e.g. it's not enough to add the path to Sage to your .bashrc. Do it by:
+```
+$ cd /usr/local/bin
+$ sudo ln -s /home/ondrej/ext/spd-3.4.2spd3-debian-64bit/spd .
+```
+Create `notebook.py`:
+```
+from sage.server.notebook.notebook_object import notebook
+
+notebook(directory='/home/ondrej/ext/nbfiles', port=8000, accounts=True,
+        address='', ulimit='-u 100 -v 3000000 -t 3600', open_viewer=False,
+        timeout=120, secure=False, server_pool=['nbuser@localhost'])
+```
+And start it using:
+```
+$ spd -python notebook.py
+```
+
+# Setting up lighttpd #
+
+```
+$ wajig install lighttpd
+```
+Create /etc/lighttpd/conf-available/20-notebook.conf:
+```
+server.modules   += ( "mod_proxy" )
+
+$SERVER["socket"] == ":80" {
+    proxy.server = ( "" =>
+        ( (
+        "host" => "127.0.0.1",
+        "port" => 8000
+        ) )
+    )
+}
+```
+Enable it:
+```
+$ sudo lighty-enable-mod notebook
+$ sudo /etc/init.d/lighttpd force-reload
+```
+And login to your computer from the outside world to the port 80.
+
+# Setting up VirtualBox #
+
+http://wiki.sagemath.org/SageVirtualBox

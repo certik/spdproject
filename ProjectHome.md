@@ -1,0 +1,67 @@
+Source Python Distribution (SPD) is a Python distribution and many optional (mainly scientific) packages. Everything fully builds from source on any platform (any linux, Mac OS X, clusters and soon windows).
+
+It is based on Sage, but the standard download has only 60MB (and builds in less than 10 minutes) and then you only install packages that you really need (or you can just download the 2MB bare SPD package and install things yourself).
+
+The aim of SPD is to make it easy for anyone to create all in one
+distributions with just the packages that he/she needs (e.g. packages that are
+currently in SPD, like scipy, numpy, notebook and then bunch of custom
+libraries, that don't even have a spkg yet). See this [thread](http://groups.google.com/group/sage-devel/browse_thread/thread/d761c483aa4f9a99) on sage-devel for more information regarding the relation of SPD and Sage.
+
+## News ##
+
+I (Ondrej) am now working actively on Qsnake ([qsnake.com](http://qsnake.com/)), which is based on SPD, but provide lots of other packages that we need. I currently don't have time to maintain both SPD and Qsnake, so I just concentrate on Qsnake now. Anything I do for Qsnake can be easily ported to SPD or Sage though, so if you want to base your distribution on SPD, let me know, so that we can put the common denominator of what we need into SPD.
+
+  * **20 May 2009** Version 3.4.2spd3 released ([release notes](http://groups.google.com/group/spd-dev/browse_thread/thread/87aff670b9b58f0d))
+  * **15 May 2009** Version 3.4.2spd2 released ([release notes](http://groups.google.com/group/spd-dev/browse_thread/thread/f6e9b20ddf4c262e))
+  * **12 May 2009** Version 3.4.2spd1 released ([release notes](http://groups.google.com/group/spd-dev/browse_thread/thread/c08576baae216d6f))
+  * **15 Apr 2009** Version 3.4.1.beta4 released ([release notes](http://groups.google.com/group/spd-dev/browse_thread/thread/38f4c575d7ff4def))
+
+## Mailinglist ##
+
+Please discuss all related issues on the mailinglist:
+
+http://groups.google.com/group/spd-dev
+
+and report all bugs to our [bug tracker](http://code.google.com/p/spdproject/issues/list).
+
+## Installation ##
+
+```
+$ wget http://spdproject.googlecode.com/files/spd-3.4.2spd3.tar
+$ tar xf spd-3.4.2spd3.tar
+$ cd spd-3.4.2spd3
+$ make
+```
+wait about 13 minutes (tested on Debian, Ubuntu, Gentoo, Fedora, Mac OS X). Then:
+```
+$ ./spd
+---------------------------------------------------------------------------
+| Source Python Distribution, Version 3.4.2spd3, Release Date: 2009-05-20 |
+| Type notebook() for the GUI, and license() for information.             |
+---------------------------------------------------------------------------
+In [1]: notebook()
+```
+
+and this will start a notebook in the browser with the standard set of packages preinstalled (numpy, scipy, matplotlib, sympy). To test it, create a new worksheet and type in:
+```
+from math import sqrt
+from numpy import array
+from scipy.special import erf
+from pylab import plot, savefig, grid
+
+A = [0.65435, 2.45106, -1.536643785333E-01, 1.153664378533E+00, 5.0000]
+j = array(range(1, 501))
+R = 1.*j/(525-j)
+corp = -A[4]/R * (A[2]*erf(sqrt(A[0]) * R) + A[3]*erf(sqrt(A[1]) * R))
+plot(R, corp, lw=2)
+plot(R[100:],-A[4]/R[100:], color=[1,0,0], lw=2, ls='-.')
+grid(True)
+savefig("a.png")
+```
+this should produce the following plot in the notebook:
+
+![http://spdproject.googlecode.com/files/a.png](http://spdproject.googlecode.com/files/a.png)
+
+(If you are curious what it is, it's an example of an atomic pseudopotential + Coulomb potential.)
+
+You can also install individual packages by hand, more info at: [Installation](http://code.google.com/p/spdproject/wiki/Installation)

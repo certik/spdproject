@@ -1,0 +1,53 @@
+You can choose any of the sections below (they are independent), or you can combine them.
+
+Note: it's easier to just download the latest release of SPD and you get all the packages below by just typing `make`.
+
+Contents:
+
+
+## Install numpy, scipy matplotlib and sympy ##
+
+```
+./spd -i fortran-20071120.p5
+./spd -i lapack-20071123.p0
+./spd -i blas-20070724
+./spd -i atlas-3.8.3.p0    # this is optional but highly recommended: atlas takes a long time to compile, but makes numpy much faster
+./spd -i numpy-1.2.0.p0
+./spd -i scipy-20071020-0.6.p4
+./spd -i matplotlib-0.98.5.3rc0-svn6910.p3
+./spd -i sympy-0.6.3.p0
+```
+
+## Install IPython parallel ##
+
+```
+./spd -i twisted-8.1.0.p2
+./spd -i openssl-0.9.8d.p1
+./spd -i pyopenssl-0.6
+./spd -i http://spdproject.googlecode.com/files/foolscap-0.3.2.p0.spkg
+./spd -i http://spdproject.googlecode.com/files/ipython-bzr1160.spkg
+```
+
+## Notebook ##
+
+```
+./spd -i http://spdproject.googlecode.com/files/pexpect-2.0.p3.spkg
+./spd -i twisted-8.1.0.p2
+./spd -i setuptools-0.6c9
+./spd -i jinja-1.2
+./spd -i libgpg_error-1.6.p0
+./spd -i libgcrypt-1.4.3.p0
+./spd -i gnutls-2.2.1.p1
+./spd -i python_gnutls-1.1.4.p3
+./spd -i jquery-1.2.6.p0
+./spd -i jqueryui-1.6r807svn.p0
+./spd -i jsmath-3.6b.p1
+./spd -i tinyMCE-3.2.0.2.p0
+./spd -i http://spdproject.googlecode.com/files/spd_notebook-3.4.1-3.spkg
+```
+
+Run the notebook with:
+```
+In [1]: from sage.server.notebook.notebook_object import notebook
+In [2]: notebook()
+```
